@@ -28,8 +28,9 @@ void print_triangle(int leftCol, int size)
 
 void print_arrow(int leftCol, int size)
 {
+  int squareCol = (leftCol +( leftCol / 2) + 1);
   print_triangle(leftCol, size);
-  print_square(8, size);
+  print_square(squareCol, size);
 }
 
 
